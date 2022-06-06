@@ -1,34 +1,55 @@
 import styled from 'styled-components';
+import drivenlogo from './img/drivenlogo.png'
 
-export default function Screen1 (){
+export default function Screen1() {
     return (
-        <>
-        <DrivenLogo>
-            <img src="/img/DrivenLogo" />
-        </DrivenLogo>
-        <ButtonRegister type='text' placeholder='E-mail'>
-        </ButtonRegister>
-        <ButtonRegister type='text' placeholder='Senha'>
-        </ButtonRegister>
-        <ButtonEnter>
-            <p>ENTRAR</p>
-        </ButtonEnter>
-        <LoginRegisterSwitch>
-            <p>Não possuí uma conta? Cadastre-se</p>
-        </LoginRegisterSwitch>
-        </>
+
+        <Container>
+            <Driven>
+                <img src={drivenlogo} />
+            </Driven>
+            <Center>
+                <ButtonRegister type='text' placeholder='E-mail'>
+                </ButtonRegister>
+            </Center>
+            <Center>
+                <ButtonRegister type='text' placeholder='Senha'>
+                </ButtonRegister>
+            </Center>
+            <Center>
+                <ButtonEnter>
+                    <p>ENTRAR</p>
+                </ButtonEnter>
+            </Center>
+
+            <LoginRegisterSwitch>
+                <p>Não possuí uma conta? Cadastre-se</p>
+            </LoginRegisterSwitch>
+        </Container>
     );
 }
-
-const DrivenLogo = styled.div`
+const Container = styled.div`
     background-color: #0E0E13;
-    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    div {
+    display: flex;
+    justify-content: center;
+    }
+`
+const Center = styled.div`
+    display: flex;
+    justify-content: center;
+`
+const Driven = styled.div`
+    background-color: #0E0E13;
+    padding-top: 100px;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 `
-const ButtonRegister = styled.button`
+const ButtonRegister = styled.input`
     width: 299px;
     height: 52px;
     border: none;
