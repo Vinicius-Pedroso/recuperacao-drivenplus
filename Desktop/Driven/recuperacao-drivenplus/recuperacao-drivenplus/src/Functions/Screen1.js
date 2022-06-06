@@ -3,7 +3,7 @@ import ButtonRegister from './ButtonRegister';
 import drivenlogo from './img/drivenlogo.png';
 //import axios from 'axios';
 
-export default function Screen1(setScreen) {
+export default function Screen1({setScreen}) {
 
     /*const URL = "https://mock-api.driven.com.br/api/v4/driven-plus/auth/login"
 
@@ -20,7 +20,7 @@ export default function Screen1(setScreen) {
             <ButtonRegister text="E-mail"/>
             <ButtonRegister text="Senha"/>
             <Center>
-                <ButtonEnter onClick={() => setScreen(3)}>
+                <ButtonEnter onClick={() => setScreen(5)}>
                     <p>ENTRAR</p>
                 </ButtonEnter>
             </Center>

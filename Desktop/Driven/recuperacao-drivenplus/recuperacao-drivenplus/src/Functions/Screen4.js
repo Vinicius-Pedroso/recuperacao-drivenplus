@@ -3,7 +3,7 @@ import vector1 from './img/vector1.png'
 import list from './img/list.svg'
 import dollar from './img/dollar.svg'
 
-export default function Screen2() {
+export default function Screen2({setConfirm}) {
     return (
         <Container>
             <ion-icon name="arrow-back-outline"></ion-icon>
@@ -38,7 +38,7 @@ export default function Screen2() {
                 <BoxInput2 type="text" placeholder="Validade"></BoxInput2>
             </Center>
             <Center>
-                <ButtonInput><p>ASSINAR</p></ButtonInput>
+                <ButtonInput onClick={() => setConfirm(true)}><p>ASSINAR</p></ButtonInput>
             </Center>
         </Container>
 

@@ -3,19 +3,19 @@ import vector1 from './img/vector1.png'
 import vector2 from './img/vector2.png'
 import vector3 from './img/vector3.png'
 
-export default function Screen3() {
+export default function Screen3({setScreen}) {
     return (
         <Container>
             <h1>Escolha seu Plano</h1>
-            <Offer>
+            <Offer onClick={() => setScreen(4)}>
                 <img src={vector1} />
                 <h2>R$ 39,99</h2>
             </Offer>
-            <Offer>
+            <Offer onClick={() => setScreen(4)}>
                 <img src={vector2} />
                 <h2>R$ 69,99</h2>
             </Offer>
-            <Offer>
+            <Offer onClick={() => setScreen(4)}>
                 <img src={vector3} />
                 <h2>R$ 99,99</h2>
             </Offer>

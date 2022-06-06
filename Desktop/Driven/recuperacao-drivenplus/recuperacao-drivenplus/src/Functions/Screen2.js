@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import ButtonRegister from './ButtonRegister';
 
-export default function Screen2 (){
+export default function Screen2 ({setScreen}){
     return (
         <Container>
             <ButtonRegister text="Nome"/>
@@ -9,12 +9,12 @@ export default function Screen2 (){
             <ButtonRegister text="E-mail"/>
             <ButtonRegister text="Senha"/>
             <div>
-                <ButtonInput>
+                <ButtonInput onClick={() => setScreen(3)}>
                     <p>CADASTRAR</p>
                 </ButtonInput>
             </div>
             <div>
-                <h1>Já possuí uma conta? Entre</h1>
+                <h1 onClick={() => setScreen(5)}>Já possuí uma conta? Entre</h1>
             </div>
         </Container>
     );
