@@ -14,7 +14,7 @@ export default function Screen2 ({setScreen}){
                 </ButtonInput>
             </div>
             <div>
-                <h1 onClick={() => setScreen(5)}>Já possuí uma conta? Entre</h1>
+                <h1 onClick={() => setScreen(1)}>Já possuí uma conta? Entre</h1>
             </div>
         </Container>
     );

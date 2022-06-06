@@ -6,7 +6,7 @@ export default function Confirmation({setConfirm, setScreen}) {
             <h1>Tem certeza que deseja assinar o plano Driven Plus (R$ xx,xx)?</h1>
             <ButtonEndLayout>
                 <ButtonEnd onClick={() => setConfirm(false)}>Não</ButtonEnd>
-                <ButtonEnd2 onClick={() => setScreen(5)} >SIM</ButtonEnd2>
+                <ButtonEnd2 onClick={() => {setConfirm(false); setScreen(1)}} >SIM</ButtonEnd2>
             </ButtonEndLayout>
         </PromptConfirma>
 

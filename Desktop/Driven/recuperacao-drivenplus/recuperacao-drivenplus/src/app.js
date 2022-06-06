@@ -14,10 +14,9 @@ export default function App (){
         {Screen == 1 && <Screen1 setScreen={setScreen}/>}
         {Screen == 2 && <Screen2 setScreen={setScreen}/>}
         {Screen == 3 && <Screen3 setScreen={setScreen}/>}
-        {Screen == 4 && <Screen4 setConfirm={setConfirm} setScreen={setScreen}/>}
-        {Confirm == true && <Confirmation />}
+        {Screen == 4 && <Screen4 setConfirm={setConfirm}/>}
+        {Confirm == true && <Confirmation setConfirm={setConfirm} setScreen={setScreen}/>}
         {Screen == 5 && <ScreenHome/>}
-
         </>
     );
 }
