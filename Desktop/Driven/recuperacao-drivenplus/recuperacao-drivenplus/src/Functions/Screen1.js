@@ -6,12 +6,8 @@ import drivenlogo from './img/drivenlogo.png';
 export default function Screen1({setScreen}) {
 
     /*const URL = "https://mock-api.driven.com.br/api/v4/driven-plus/auth/login"
-
     const LoginPromisse = axios.post(URL);
     */
-
-    
-
     return (
         <Container>
             <Driven>
@@ -20,7 +16,10 @@ export default function Screen1({setScreen}) {
             <ButtonRegister text="E-mail"/>
             <ButtonRegister text="Senha"/>
             <Center>
-                <ButtonEnter onClick={() => setScreen(5)}>
+                <ButtonEnter onClick={() => {
+                    setScreen(5)
+
+                }}>
                     <p>ENTRAR</p>
                 </ButtonEnter>
             </Center>
@@ -31,6 +30,21 @@ export default function Screen1({setScreen}) {
         </Container>
     );
 }
+/*
+function SendLogin (){
+    const URL = "https://mock-api.driven.com.br/api/v4/driven-plus/auth/login";
+    const LoginPromisse = axios.post(URL);
+    LoginPromisse.then(response => {
+        const {user} = response;
+        setId(user.id);
+    })
+    LoginPromisse.catch(error => {
+        const ErrorMessage = error.response.statusText;
+        console.log(ErrorMessage);
+    })
+};
+*/
+
 const Container = styled.div`
     background-color: #0E0E13;
     width: 100%;

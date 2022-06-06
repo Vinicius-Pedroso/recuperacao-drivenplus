@@ -9,6 +9,7 @@ import ScreenHome from "./Functions/ScreenHome";
 export default function App (){
     const [Screen, setScreen]= useState(1);
     const [Confirm, setConfirm]= useState(false);
+    //const [Id, setId]= useState(null);
     return (
         <>
         {Screen == 1 && <Screen1 setScreen={setScreen}/>}
