@@ -11,7 +11,7 @@ export default function Footer(){
 
 const Foot = styled.div`
     margin-top: 50px;
-    bottom: 10px;
+    bottom: 0px;
     padding-left: 6%;
 `
 const ChangeService = styled.div`

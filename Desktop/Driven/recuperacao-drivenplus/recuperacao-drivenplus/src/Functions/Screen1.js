@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ButtonRegister from './ButtonRegister';
 import drivenlogo from './img/drivenlogo.png';
 //import axios from 'axios';
 
@@ -16,22 +17,16 @@ export default function Screen1(setScreen) {
             <Driven>
                 <img src={drivenlogo} />
             </Driven>
+            <ButtonRegister text="E-mail"/>
+            <ButtonRegister text="Senha"/>
             <Center>
-                <ButtonRegister type='text' placeholder='E-mail'>
-                </ButtonRegister>
-            </Center>
-            <Center>
-                <ButtonRegister type='text' placeholder='Senha'>
-                </ButtonRegister>
-            </Center>
-            <Center>
-                <ButtonEnter>
-                    <p onClick={() => setScreen(3)}>ENTRAR</p>
+                <ButtonEnter onClick={() => setScreen(3)}>
+                    <p>ENTRAR</p>
                 </ButtonEnter>
             </Center>
 
-            <LoginRegisterSwitch>
-                <p onClick={() => setScreen(2)}>Não possuí uma conta? Cadastre-se</p>
+            <LoginRegisterSwitch onClick={() => setScreen(2)}>
+                <p>Não possuí uma conta? Cadastre-se</p>
             </LoginRegisterSwitch>
         </Container>
     );
@@ -57,24 +52,6 @@ const Driven = styled.div`
     align-items: center;
     margin-bottom: 50px;
 `
-const ButtonRegister = styled.input`
-    width: 299px;
-    height: 52px;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-
-    ::placeholder {
-        padding-left: 15px;
-        color: #7E7E7E;
-        font-size: 14px;
-        font-family: 'Roboto';
-        font-weight: 400;
-    }
-`
-
 const ButtonEnter = styled.div`
     width: 299px;
     height: 52px;

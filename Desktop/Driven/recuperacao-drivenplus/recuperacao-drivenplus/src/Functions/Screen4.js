@@ -62,7 +62,6 @@ const Container = styled.div`
         font-size: 16px;
         font-weight: 400;
         color: white;
-        margin-bottom: 25px;
     }
 `
 const MiniLogoDriven = styled.div`
@@ -103,6 +102,8 @@ const SpanFlex = styled.span`
     align-items: center;
     display: flex;
     padding-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 `
 const BoxInput2 = styled.input`
     width: 145px;

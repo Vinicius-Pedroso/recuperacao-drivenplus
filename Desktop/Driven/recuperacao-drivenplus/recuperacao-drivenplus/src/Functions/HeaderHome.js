@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import vector1 from './img/vector1.png'
+import vector2 from './img/vector2.png'
+import vector3 from './img/vector3.png'
 import user from './img/user.png'
 
-export default function HeaderHome (){
+export default function HeaderHome ({service}){
+
     return (
         <Header>
             <div>
                 <div>
-                    <img src={vector1} />
+                    {service == 1 &&<img src={vector1} />}
+                    {service == 2 &&<img src={vector2} />}
+                    {service == 3 &&<img src={vector3} />}
                 </div>
                 <VectorUser>
                     <img src={user} />

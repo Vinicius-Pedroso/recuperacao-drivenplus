@@ -1,24 +1,13 @@
 import styled from 'styled-components';
+import ButtonRegister from './ButtonRegister';
 
 export default function Screen2 (){
     return (
         <Container>
-            <div>
-                <BoxInput type="text" placeholder="Nome">
-                </BoxInput>
-            </div>
-            <div>
-                <BoxInput type="text" placeholder="CPF">
-                </BoxInput>
-            </div>
-            <div>
-                <BoxInput type="text" placeholder="E-mail">
-                </BoxInput>
-            </div>
-            <div>
-                <BoxInput type="text" placeholder="Senha">
-                </BoxInput>
-            </div>
+            <ButtonRegister text="Nome"/>
+            <ButtonRegister text="CPF"/>
+            <ButtonRegister text="E-mail"/>
+            <ButtonRegister text="Senha"/>
             <div>
                 <ButtonInput>
                     <p>CADASTRAR</p>
@@ -31,6 +20,7 @@ export default function Screen2 (){
     );
 }
 const Container = styled.div`
+    padding-top: 120px;
     background-color: #0E0E13;
     width: 100%;
     height: 100vh;
@@ -46,22 +36,6 @@ const Container = styled.div`
         font-weight: 400;
         text-decoration: underline;
     }   
-`
-const BoxInput = styled.input`
-    width: 299px;
-    height: 52px;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 400;
 `
 const ButtonInput = styled.button`
     width: 299px;
