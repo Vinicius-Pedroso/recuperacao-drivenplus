@@ -1,9 +1,17 @@
 import styled from 'styled-components';
-import drivenlogo from './img/drivenlogo.png'
+import drivenlogo from './img/drivenlogo.png';
+//import axios from 'axios';
 
-export default function Screen1() {
+export default function Screen1(setScreen) {
+
+    /*const URL = "https://mock-api.driven.com.br/api/v4/driven-plus/auth/login"
+
+    const LoginPromisse = axios.post(URL);
+    */
+
+    
+
     return (
-
         <Container>
             <Driven>
                 <img src={drivenlogo} />
@@ -18,12 +26,12 @@ export default function Screen1() {
             </Center>
             <Center>
                 <ButtonEnter>
-                    <p>ENTRAR</p>
+                    <p onClick={() => setScreen(3)}>ENTRAR</p>
                 </ButtonEnter>
             </Center>
 
             <LoginRegisterSwitch>
-                <p>Não possuí uma conta? Cadastre-se</p>
+                <p onClick={() => setScreen(2)}>Não possuí uma conta? Cadastre-se</p>
             </LoginRegisterSwitch>
         </Container>
     );
